@@ -1,0 +1,9 @@
+baseUrl: null
+enabled: true
+handle: nl
+hasUrls: true
+language: nl-BE
+name: 'Sotraplant NL'
+primary: false
+siteGroup: b7c57c63-a882-48cf-821a-46babb7682f7
+sortOrder: 2

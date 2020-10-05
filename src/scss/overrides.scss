@@ -1,0 +1,16 @@
+/**
+	Overrides app styles
+	Uses Tailwindcss: https://tailwindcss.com
+	Edit global variables in tailwind.config.js to suit your needs
+ */
+
+.logo {
+	.logo__color-fill {
+		fill: theme('colors.black');
+	}
+}
+
+// Override sharethis plugin z-index
+#st-1 {
+	z-index: 10 !important;
+}

@@ -1,0 +1,123 @@
+{# -- Extends Generic layout template -- #}
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% block headLinks %}
+	{{ parent() }}
+{% endblock headLinks %}
+
+{% block content %}
+	<section class="section section-banner">
+		<div class="section__heading">
+			<div class="grid grid--col-3 grid--offset-1">
+				<div class="col-span-2">
+					{# -- Include title template -- #}
+					{% include '_components/heading.twig' with {'headingLevel': '1', 'entity': entry} %}
+					{% include '_components/button.twig' with {'entity': entry} %}
+				</div>
+			</div>
+		</div>
+		{% if entry.videoBanner|length %}
+			<div class="section__video">
+				{% set relatedAssets = entry.videoBanner.one() %}
+				<video class="video" muted autoplay loop playsinline>
+					<source src="{{ relatedAssets.url }}" type="video/mp4">
+				</video>
+			</div>
+		{% endif %}
+	</section>
+	{% include "_components/_matrix/index.twig" %}
+	{% include "_components/call-to-action.twig" with {'entity': entry} %}
+	{# News #}
+	<section class="section section-news section--multiple">
+		<div class="section__heading">
+			<div class="grid grid--col-2 grid--offset-1">
+				<div class="col-span-1">
+					<span class="tag">{{ 'News'|t }}</span>
+					<h2 class="heading heading--2">{{ 'Discover our latest news'|t }}</h2>
+				</div>
+				<div class="col-span-1 flex items-end justify-end sm:mt-1 lg:mt-0">
+					<a href="{{ url('news'|t) }}" class="link link--with-icon">
+						<span class="link__text">{{ 'See news'|t }}</span>
+						<svg class="link__icon icon icon--right" width="5" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M4.398 3.594L.87.168a.467.467 0 00-.717 0 .592.592 0 00-.137.524L.71 4.004.016 7.316a.558.558 0 00.398.672.478.478 0 00.456-.137l3.528-3.415a.58.58 0 000-.785v-.057z"/></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="section__content">
+			<div class="grid grid--col-3">
+				{% for news in craft.entries().section('blogPost').limit(3).all() %}
+					<div class="col-span-1">
+						<section class="card card-news">
+							<a href="{{ news.url }}" class="card__link link--wrapper">
+								<div class="card__header">
+									<time class="tag w-full block text-primary"
+												datetime="{{ entry.postDate | date('d/m/Y') }}">{{ entry.postDate | date('d/m/Y') }}</time>
+									{% include '_components/heading.twig' with {'headingLevel': '3', 'entity': news} %}
+								</div>
+								<div class="card__content">
+									{% include '_components/image-landscape.twig' with {'entity': news} %}
+								</div>
+							</a>
+						</section>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+	<section class="section section-newsletter">
+		<div class="grid">
+			<div class="section__content">
+				<h2 class="heading heading--2 text-center">{{ 'Subscribe to our newsletter'|t }}</h2>
+				{% if craft.app.language|slice(0,2) == 'fr' %}
+					<form class="js-cm-form"
+								id="subForm"
+								action="https://www.createsend.com/t/subscribeerror?description="
+								method="post" data-id="A61C50BEC994754B1D79C5819EC1255C0AF008D4FB20DC7A853AD42E8B55F6F10646121D9236C7CB59D884CFC52D2DCBBEE52C97CCC5B0D353EF409A8DE0FFB8">
+						<div class="input-group">
+							<input autocomplete="Email"
+										 aria-label="Adresse électronique"
+										 class="js-cm-email-input qa-input-email"
+										 id="fieldEmail"
+										 maxlength="200" name="cm-jjkrkyl-jjkrkyl"
+										 required=""
+										 placeholder="{{ 'Enter your email'|t }}"
+										 type="email">
+							<button type="submit" class="button button--secondary">
+								<span class="button__text">{{ "Subscribe"|t }}</span>
+							</button>
+						</div>
+					</form>
+				{% elseif craft.app.language|slice(0,2) == 'nl' %}
+					<form class="js-cm-form"
+								id="subForm"
+								action="https://www.createsend.com/t/subscribeerror?description="
+								method="post" data-id="A61C50BEC994754B1D79C5819EC1255CCAF76406FC421002B831A58CD21D97E37FFE9EC264421D7124F42A252F7ED9AFB01EDF7A15B581B3BD2957FCF45FD88C">
+						<div class="input-group">
+							<input autocomplete="Email"
+										 aria-label="E-mailadres"
+										 class="js-cm-email-input qa-input-email"
+										 id="fieldEmail"
+										 maxlength="200"
+										 name="cm-jjkrkyu-jjkrkyu"
+										 placeholder="{{ 'Enter your email'|t }}"
+										 required=""
+										 type="email">
+							<button type="submit" class="button button--secondary">
+								<span class="button__text">{{ "Subscribe"|t }}</span>
+							</button>
+						</div>
+					</form>
+				{% endif %}
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+{% block subcontent %}
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+	{{ parent() }}
+	<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+{% endblock bodyJs %}
