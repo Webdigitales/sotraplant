@@ -6,7 +6,7 @@
 {% endblock headLinks %}
 
 {% block content %}
-	<section class="section section-banner">
+	<section class="section section-banner{% if entry.image|length %} section--img{% endif %}">
 		<div class="section__heading">
 			<div class="grid grid--col-3 grid--offset-1">
 				<div class="col-span-2">
@@ -22,6 +22,11 @@
 				<video class="video" muted autoplay loop playsinline>
 					<source src="{{ relatedAssets.url }}" type="video/mp4">
 				</video>
+			</div>
+		{% endif %}
+		{% if entry.image|length %}
+			<div class="section__image">
+				{% include '_components/image-landscape.twig' with {'entity': entry} %}
 			</div>
 		{% endif %}
 	</section>
@@ -72,13 +77,13 @@
 					<form class="js-cm-form"
 								id="subForm"
 								action="https://www.createsend.com/t/subscribeerror?description="
-								method="post" data-id="A61C50BEC994754B1D79C5819EC1255C0AF008D4FB20DC7A853AD42E8B55F6F10646121D9236C7CB59D884CFC52D2DCBBEE52C97CCC5B0D353EF409A8DE0FFB8">
+								method="post" data-id="A61C50BEC994754B1D79C5819EC1255C32F1C4EE6BA0812D8679C0AD5EAF2D64AF1C5FFCF347EE9F381FCBA3D417BA3589F5191D9CD21E4B567016C08686C3F5">
 						<div class="input-group">
 							<input autocomplete="Email"
 										 aria-label="Adresse électronique"
 										 class="js-cm-email-input qa-input-email"
 										 id="fieldEmail"
-										 maxlength="200" name="cm-jjkrkyl-jjkrkyl"
+										 maxlength="200" name="cm-jttitky-jttitky"
 										 required=""
 										 placeholder="{{ 'Enter your email'|t }}"
 										 type="email">

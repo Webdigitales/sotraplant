@@ -33,7 +33,7 @@ module.exports = {
 		// ./templates/_boilerplate/_partials/head-css.twig
 		fontFamily: {
 			heading: [
-				"Montserrat",
+				"Bebas Neue",
 				"Georgia",
 				"Arial",
 				"serif"

@@ -1,4 +1,4 @@
-dateModified: 1601906740
+dateModified: 1601970391
 email:
   fromEmail: jtrompette@webdigitales.be
   fromName: Sotraplant
@@ -82,7 +82,7 @@ plugins:
     enabled: true
     schemaVersion: 1.1.0
     settings:
-      containerID: ''
+      containerID: GTM-5Q3WDPJ
   image-optimize:
     edition: standard
     enabled: true

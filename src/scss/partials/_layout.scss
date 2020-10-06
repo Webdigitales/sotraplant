@@ -143,6 +143,10 @@ img {
 		position: relative;
 		height: calc(100vh - 80px);
 
+		&.section--img {
+			height: 480px;
+		}
+
 		.section__heading {
 			width: 100%;
 		}
@@ -174,6 +178,22 @@ img {
 				z-index: 1;
 			}
 		}
+
+		.section__image {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			overflow: hidden;
+			z-index: -1;
+
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
 	}
 
 	.heading--1 {
@@ -188,6 +208,14 @@ img {
 .site-footer {
 	.heading {
 		@apply mb-1;
+	}
+
+	.col-span-1 {
+		&:first-child {
+			@media (min-width: theme('screens.md')) {
+				padding-right: 1rem;
+			}
+		}
 	}
 
 	.footer__bottom {
