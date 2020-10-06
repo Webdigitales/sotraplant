@@ -4,6 +4,11 @@
     {{ parent() }}
 {% endblock headLinks %}
 
+{% block headLinks %}
+	{{ parent() }}
+	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f7c2c506f87bb00127989fe&product=sop' async='async'></script>
+{% endblock headLinks %}
+
 {% block content %}
 	<section class="section section-job job">
 		<div class="grid lg:grid-cols-3 gap-4">
@@ -53,5 +58,4 @@
 {# -- Any JavaScript that should be included before </body> -- #}
 {% block bodyJs %}
     {{ parent() }}
-	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f7c2c506f87bb00127989fe&product=sop' async='async'></script>
 {% endblock bodyJs %}
