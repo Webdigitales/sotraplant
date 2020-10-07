@@ -1,5 +1,5 @@
 fieldLayouts:
-  8a8ee694-983c-41b7-b91f-9e8294375d5a:
+  60840a6f-04c6-492d-b460-7f28805198b5:
     tabs:
       -
         elements:
@@ -11,7 +11,7 @@ fieldLayouts:
             disabled: false
             id: null
             instructions: null
-            label: ''
+            label: null
             max: null
             min: null
             name: null
@@ -72,11 +72,11 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 3
-handle: blog
+handle: caseStudies
 hasTitleField: false
-name: Blog
-section: 31ad9b5c-ed47-4253-8528-65c2d6286ea5
+name: Références
+section: 7c2a27c3-78f2-4fe9-872b-75d6e2b18f32
 sortOrder: 1
 titleFormat: '{heading}'
 titleTranslationKeyFormat: null
-titleTranslationMethod: ''
+titleTranslationMethod: site

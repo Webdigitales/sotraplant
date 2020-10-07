@@ -24,7 +24,9 @@
 							<div class="swiper-slide">
 								<section class="slide__content case">
 									<div class="case__image">
-										{% include '_components/image-landscape.twig' with {'entity': case} %}
+										<a href="{{ case.url }}">
+											{% include '_components/image-landscape.twig' with {'entity': case} %}
+										</a>
 									</div>
 									<div class="case__content card card--shadow card--grid">
 										<div class="icon-wrapper">
@@ -33,6 +35,10 @@
 										{% include '_components/heading.twig' with {'headingLevel': '3', 'entity': case} %}
 										<span class="tag case__client text-black">{{ case.client }}</span>
 										<span class="tag case__function text-grey">{{ case.clientSubtitle }}</span>
+										<a href="{{ case.url }}" class="link link--with-icon mt-2">
+											<span class="link__text">{{ 'See case study'|t }}</span>
+											<svg class="link__icon icon icon--right" width="5" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M4.398 3.594L.87.168a.467.467 0 00-.717 0 .592.592 0 00-.137.524L.71 4.004.016 7.316a.558.558 0 00.398.672.478.478 0 00.456-.137l3.528-3.415a.58.58 0 000-.785v-.057z"/></svg>
+										</a>
 									</div>
 								</section>
 							</div>

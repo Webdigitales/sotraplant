@@ -2,9 +2,10 @@
 
 <div class="form-wrapper">
 	<h2 class="heading heading--2 mb-2 pl-1">{{ 'Devis formulaire'|t }}</h2>
-	<form class="form form--contact" method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
+	<form class="form form--devis" method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
 		{{ csrfInput() }}
 		<input type="hidden" name="action" value="contact-form/send">
+		<input type="hidden" name="prependSubject" value="{{ entry.heading|hash }}">
 		{{ redirectInput('confirmation-devis') }}
 
 		<div class="flex flex-wrap mb-1">

@@ -1,7 +1,7 @@
 {% extends "_layouts/generic-page-layout.twig" %}
 
 {% set posts = craft.entries()
-	.section('blogPost')
+	.section('caseStudy')
 	.orderBy('dateCreated desc')
 	.limit(6) %}
 
@@ -36,8 +36,7 @@
 			</div>
 		</div>
 	</section>
-
-	{% if craft.entries().section('blogPost')|length > 6 %}
+	{% if craft.entries().section('caseStudy')|length > 6 %}
 		<nav class="pagination-wrapper">
 			<ul class="pagination">
 				{% if pageInfo.prevUrl %}
@@ -83,10 +82,10 @@
 	{% include "_components/call-to-action.twig" with {'entity': entry} %}
 {% endblock %}
 
-{% block subcontent %}
-{% endblock %}
+	{% block subcontent %}
+	{% endblock %}
 
-{# -- Any JavaScript that should be included before </body> -- #}
-{% block bodyJs %}
-	{{ parent() }}
-{% endblock bodyJs %}
+	{# -- Any JavaScript that should be included before </body> -- #}
+	{% block bodyJs %}
+		{{ parent() }}
+	{% endblock bodyJs %}

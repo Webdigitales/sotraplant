@@ -25,7 +25,7 @@
 	'Subscribe' => "Abonneren",
 	'Subscribe to our newsletter' => "Schrijf u in voor onze nieuwsbrief",
 	'Enter your email' => "Voer uw e-mailadres in",
-	'Back to news' => "Terug naar nieuws",
+	'Back to news' => "Nieuws",
 	'Back to jobs' => "Jobs",
 	'News' => "Nieuws",
 	'See news' => "Alle nieuws",
@@ -35,5 +35,8 @@
 	'Other subject' => "Ander onderwerp",
 	'Send us a message' => "Ons contactformulier",
 	'Devis formulaire' => "Ons offerteaanvraagformulier",
+	'case study' => "reference",
+	'Case studies' => "Références",
+	'See case study' => "Voir la référence",
 	'Opening hours' => "Openingsuren"
 );

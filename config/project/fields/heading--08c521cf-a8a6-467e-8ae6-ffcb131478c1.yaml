@@ -1,4 +1,4 @@
-contentColumnType: string(4000)
+contentColumnType: string(1000)
 fieldGroup: 3cf03712-85e6-458d-b266-ebbcff427daa
 handle: heading
 instructions: ''
@@ -6,7 +6,7 @@ name: Titre
 searchable: true
 settings:
   byteLimit: null
-  charLimit: 1000
+  charLimit: 250
   code: ''
   columnType: null
   initialRows: '4'
@@ -14,5 +14,5 @@ settings:
   placeholder: ''
   uiMode: normal
 translationKeyFormat: null
-translationMethod: language
+translationMethod: none
 type: craft\fields\PlainText

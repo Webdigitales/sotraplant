@@ -25,7 +25,7 @@
 	'Subscribe' => "S'abonner",
 	'Subscribe to our newsletter' => "Inscrivez-vous à notre newsletter",
 	'Enter your email' => "Entrez votre adresse email",
-	'Back to news' => "Retour aux actualités",
+	'Back to news' => "Actualités",
 	'Back to jobs' => "Jobs",
 	'News' => "Actualité",
 	'See news' => "Toutes nos actus",
@@ -35,5 +35,8 @@
 	'Other subject' => "Autre sujet",
 	'Send us a message' => "Notre formulaire de contact",
 	'Devis formulaire' => "Notre formulaire de devis",
+	'case study' => "reference",
+	'See case study' => "Voir la référence",
+	'Back to Case studies' => "Références",
 	'Opening hours' => "Heures d'ouverture"
 );
