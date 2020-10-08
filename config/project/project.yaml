@@ -1,6 +1,6 @@
-dateModified: 1602145243
+dateModified: 1602145597
 email:
-  fromEmail: kmarion@webdigitales.be
+  fromEmail: jtrompette@webdigitales.be
   fromName: Sotraplant
   replyToEmail: null
   template: ''
@@ -58,7 +58,7 @@ plugins:
       prependSender: Sotraplant
       prependSubject: 'Nouveau message sur votre site internet'
       successFlashMessage: 'Votre message a été envoyé.'
-      toEmail: kmarion@webdigitales.be
+      toEmail: jtrompette@webdigitales.be
   contact-form-honeypot:
     edition: standard
     enabled: true
