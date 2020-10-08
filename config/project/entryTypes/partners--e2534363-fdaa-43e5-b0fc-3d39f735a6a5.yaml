@@ -1,0 +1,38 @@
+fieldLayouts:
+  e8ca7501-1cd8-43fa-a78f-5d4dd726284a:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Contenu
+        sortOrder: 1
+handle: partners
+hasTitleField: false
+name: Partenaires
+section: 7082ecb0-2931-42bd-928e-cd9c70a22f5c
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
