@@ -2,7 +2,7 @@
 
 {% set posts = craft.entries()
 	.section('blogPost')
-	.orderBy('dateCreated desc')
+	.orderBy('postDate desc')
 	.limit(6) %}
 
 {% paginate posts as pageInfo, pageEntries %}
