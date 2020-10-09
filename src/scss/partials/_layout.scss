@@ -78,6 +78,7 @@ img {
 	position: sticky;
 	top: 0;
 	z-index: 900;
+	align-items: center;
 	@apply bg-white;
 
 	.header__item {
