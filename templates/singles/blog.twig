@@ -23,7 +23,7 @@
 							<a href="{{ post.url }}" class="card__link link--wrapper">
 								<div class="card__header">
 									<time class="tag w-full block text-primary"
-												datetime="{{ entry.postDate | date('d/m/Y') }}">{{ entry.postDate | date('d/m/Y') }}</time>
+												datetime="{{ post.postDate | date('d/m/Y') }}">{{ post.postDate | date('d/m/Y') }}</time>
 									{% include '_components/heading.twig' with {'headingLevel': '3', 'entity': post} %}
 								</div>
 								<div class="card__content">
