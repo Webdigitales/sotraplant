@@ -18,6 +18,6 @@ siteSettings:
   e3415183-c41b-406f-b496-b97591cc0484:
     enabledByDefault: true
     hasUrls: true
-    template: null
+    template: singles/partners
     uriFormat: partenaire
 type: single

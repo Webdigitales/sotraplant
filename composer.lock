@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb52084283c271ef56f73e5140d1d46f",
+    "content-hash": "115ebad8e7a6701cf31813df8b2a90a1",
     "packages": [
         {
             "name": "barrelstrength/sprout-base",
@@ -2576,18 +2576,18 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.18",
+            "version": "1.6.19",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/06f464f16543b83114bf952c09049fd29943c1f5",
-                "reference": "06f464f16543b83114bf952c09049fd29943c1f5",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/00a0f39847cb61962ee656a0af1698b8a42774b5",
+                "reference": "00a0f39847cb61962ee656a0af1698b8a42774b5",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
                 "ksubileau/color-thief-php": "^1.3",
                 "mikehaertl/php-shellcommand": "~1.2",
-                "nystudio107/craft-imageoptimize-imgix": "^1.1.1",
+                "nystudio107/craft-imageoptimize-imgix": "^1.1.3",
                 "nystudio107/craft-imageoptimize-sharp": "^1.0.0",
                 "nystudio107/craft-imageoptimize-thumbor": "^1.3.0"
             },
@@ -2636,15 +2636,15 @@
                 "docs": "https://nystudio107.com/plugins/imageoptimize/documentation",
                 "issues": "https://nystudio107.com/plugins/imageoptimize/support"
             },
-            "time": "2020-09-29T02:12:18+00:00"
+            "time": "2020-10-08T02:41:42+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/749306ae350c75c1573eb40a036257469c22df39",
-                "reference": "749306ae350c75c1573eb40a036257469c22df39",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/cc8b3d33fe64b533e1572e8f5b8670c8207a73c8",
+                "reference": "cc8b3d33fe64b533e1572e8f5b8670c8207a73c8",
                 "shasum": ""
             },
             "require": {
@@ -2658,7 +2658,6 @@
                     "nystudio107\\imageoptimizeimgix\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -2675,7 +2674,11 @@
                 "image-transform",
                 "imgix"
             ],
-            "time": "2020-02-11T21:21:51+00:00"
+            "support": {
+                "docs": "https://github.com/nystudio107/craft-imageoptimize-imgix/blob/v1/README.md",
+                "issues": "https://github.com/nystudio107/craft-imageoptimize-imgix/issues"
+            },
+            "time": "2020-10-08T02:39:57+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-sharp",
@@ -3706,7 +3709,7 @@
             "version": "v5.1.7",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/04c3a31fe8ea94b42c9e2d1acc93d19782133b00",
+                "url": "https://api.github.com/repos/symfony/console/zipball/ae789a8a2ad189ce7e8216942cdb9b77319f5eb8",
                 "reference": "04c3a31fe8ea94b42c9e2d1acc93d19782133b00",
                 "shasum": ""
             },

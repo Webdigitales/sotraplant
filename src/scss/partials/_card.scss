@@ -131,4 +131,37 @@
 			@apply duration-300;
 		}
 	}
+
+	&-partner {
+		@apply
+		bg-white
+		border-1
+		border-gray-100;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 50%;
+			@apply m-1.5;
+		}
+
+		.link--wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			width: 100%;
+
+			&:hover {
+				img {
+					filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+					filter: gray; /* IE5+ */
+					-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+					-webkit-transition: all .3s ease-in-out;
+					transform: none;
+				}
+			}
+		}
+	}
 }
