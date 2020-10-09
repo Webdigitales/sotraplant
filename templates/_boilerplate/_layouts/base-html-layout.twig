@@ -46,10 +46,6 @@
 	{% block headLinks %}
 	{% endblock headLinks %}
 
-	{# -- Any JavaScript that should be included before </head> -- #}
-	{% block headJs %}
-	{% endblock headJs %}
-
 	{# -- Inline and critical CSS #}
 	<style>
 		[v-cloak] {
@@ -62,6 +58,9 @@
 	</style>
 	{% include "_boilerplate/_partials/head-css.twig" %}
 
+	{# -- Any JavaScript that should be included before </head> -- #}
+	{% block headJs %}
+	{% endblock headJs %}
 	{# -- Inline and polyfill JS #}
 	{% include "_boilerplate/_partials/head-js.twig" %}
 
