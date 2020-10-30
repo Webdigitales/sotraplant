@@ -1,6 +1,6 @@
-dateModified: 1602250295
+dateModified: 1604047965
 email:
-  fromEmail: jtrompette@webdigitales.be
+  fromEmail: courrier@sotraplant.be
   fromName: Sotraplant
   replyToEmail: null
   template: ''
@@ -161,7 +161,7 @@ plugins:
       sitemapLimit: '1000'
       sitemapName: sitemap
       socialImage:
-        - '164'
+        - '561'
       title:
         -
           __assoc__:
