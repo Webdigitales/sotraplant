@@ -1,4 +1,4 @@
-dateModified: 1604047965
+dateModified: 1604233726
 email:
   fromEmail: courrier@sotraplant.be
   fromName: Sotraplant
@@ -58,7 +58,7 @@ plugins:
       prependSender: Sotraplant
       prependSubject: 'Nouveau message sur votre site internet'
       successFlashMessage: 'Votre message a été envoyé.'
-      toEmail: jtrompette@webdigitales.be
+      toEmail: courrier@sotraplant.be
   contact-form-honeypot:
     edition: standard
     enabled: true
@@ -136,7 +136,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: GM5K1QPEHX6MW6IJJXAR9SCL
-    schemaVersion: 1.0.19
+    schemaVersion: 1.0.21
   redactor:
     edition: standard
     enabled: true
